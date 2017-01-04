@@ -3,6 +3,7 @@ namespace onFact;
 
 require_once('onFactCustomers.php');
 require_once('onFactInvoices.php');
+require_once('onFactProductgroups.php');
 
 class Api {
     
@@ -12,8 +13,9 @@ class Api {
     function __construct($apiKey) {
         $this->apiKey = $apiKey;
         
-        $this->Customers    = new Customers($this);
-        $this->Invoices     = new Invoices($this);
+        $this->Customers        = new Customers($this);
+        $this->Invoices         = new Invoices($this);
+        $this->Productgroups    = new Productgroups($this);
     } 
      
     function get($endpoint) {      
