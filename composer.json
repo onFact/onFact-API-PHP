@@ -13,11 +13,6 @@
             "files": ["src/onFactApi.php"]
     },
     "require": {
-        "codeception/codeception": "^2.2"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        }
+        "codeception/codeception": "^2.1",
     }
 }
