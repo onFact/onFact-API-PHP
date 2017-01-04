@@ -1,3 +1,4 @@
+![Build](https://travis-ci.org/onFact/onFact-API-PHP.svg?branch=master)
 # onFact-API-PHP
 PHP classes that can be used to connect to the onFact API
  
