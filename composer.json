@@ -13,6 +13,6 @@
             "files": ["src/onFactApi.php"]
     },
     "require": {
-        "codeception/codeception": "^2.1",
+        "codeception/codeception": "^2.1"
     }
 }
