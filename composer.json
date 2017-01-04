@@ -2,13 +2,16 @@
     "name": "onfact/onfact-api-php",
     "description": "PHP Classes to help connect to the onFact API",
     "type": "library",
-    "license": "MIT",
+    "license": "MIT", 
     "authors": [
         {
             "name": "Kevin Van Gyseghem",
             "email": "kevin@infinwebs.be"
         }
-    ],
+    ], 
+    "autoload": {
+            "files": ["src/onFactApi.php"]
+    },
     "require": {
         "codeception/codeception": "^2.2"
     }
