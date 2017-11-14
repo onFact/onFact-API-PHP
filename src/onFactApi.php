@@ -2,6 +2,7 @@
 namespace onFact;
 
 require_once('onFactCustomers.php');
+require_once('onFactContactPeople.php');
 require_once('onFactInvoices.php');
 require_once('onFactProductgroups.php');
 require_once('onFactEmails.php');
@@ -16,6 +17,7 @@ class Api {
         $this->apiKey = $apiKey;
         
         $this->Customers        = new Customers($this);
+        $this->ContactPeople    = new ContactPeople($this);
         $this->Invoices         = new Invoices($this);
         $this->Productgroups    = new Productgroups($this);
         $this->Emails           = new Emails($this);

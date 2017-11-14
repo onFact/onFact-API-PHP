@@ -85,8 +85,7 @@ class Documentevents extends \PHPUnit_Framework_TestCase
         $documentApi = $onFact->Invoices->view($invoiceId);    
         $this->assertEquals($documentApi['Invoice']['status'], 'concept');
         
-        $onFact->Invoices->delete($invoiceId); 
-
+        $onFact->Invoices->delete($invoiceId);
     } 
  
  
