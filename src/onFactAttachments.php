@@ -23,7 +23,7 @@ class Attachments {
         if (function_exists('curl_file_create')) { // php 5.5+
           $cFile = curl_file_create($tmpfname);
         } else { // 
-          $cFile = '@' . realpath($file_name_with_full_path);
+          $cFile = '@' . realpath($tmpfname);
         }
         $post = array( 'file_contents'=> $cFile);
         $query = http_build_query(['name' => $attachment['Attachment']['name'], 'model' => $attachment['Attachment']['model'], 'model_id' => $attachment['Attachment']['model_id']]);
