@@ -1,6 +1,7 @@
 <?PHP
 namespace onFact;
 
+require_once('onFactAttachments.php');
 require_once('onFactCustomers.php');
 require_once('onFactContactPeople.php');
 require_once('onFactInvoices.php');
@@ -10,8 +11,8 @@ require_once('onFactDocumentevents.php');
 
 class Api {
     
-    static private $apiRoot = "https://api.onfact.be/";
-    private $apiKey;
+    static public $apiRoot = "https://api.onfact.be/";
+    public $apiKey;
     
     function __construct($apiKey) {
         $this->apiKey = $apiKey;
@@ -22,6 +23,7 @@ class Api {
         $this->Productgroups    = new Productgroups($this);
         $this->Emails           = new Emails($this);
         $this->Documentevents   = new Documentevents($this);
+        $this->Attachments      = new Attachments($this);
     } 
      
     function get($endpoint) {      

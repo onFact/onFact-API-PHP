@@ -3,10 +3,13 @@
 PHP classes that can be used to connect to the onFact API
  
 ## Supported endpoints:
-* contacts (customers)
-* invoices
-* productgroups
-* products
+* Contacts (customers)
+* ContactPeople
+* Invoices
+* Productgroups
+* Products
+* Documentevents
+* Attachments
  
 ## Easy setup
 Installation using composer:
@@ -26,7 +29,7 @@ Connect and use API
 <?PHP
 define('ONFACT_API_KEY', '...');
 $onFact = new onFact\Api(ONFACT_API_KEY);
-$id = $onFact->Customers->create(array(
+$id = $onFact->Customers->add(array(
     'Contact' => array(
         'name' => 'John Dhoe',
     )
