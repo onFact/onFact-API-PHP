@@ -28,7 +28,7 @@ class Attachments extends \PHPUnit_Framework_TestCase
         
         $attachment = array(
             'Attachment' => array(
-                'file' => 'testbestand',
+                'file' => base64_encode('testbestand'),
                 'name' => 'test.txt',
                 'model' => 'Contact',
                 'model_id' => $id,
@@ -37,8 +37,8 @@ class Attachments extends \PHPUnit_Framework_TestCase
         $attachmentId = $onFact->Attachments->add($attachment);   
         $this->assertTrue($attachmentId > 0);
         
-        $id = $onFact->Customers->delete($id);  
-        $onFact->Attachments->delete($attachmentId);
+        //$id = $onFact->Customers->delete($id);  
+        //$onFact->Attachments->delete($attachmentId);
     }
      
     

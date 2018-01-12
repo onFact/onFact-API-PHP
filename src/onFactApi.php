@@ -5,6 +5,7 @@ require_once('onFactAttachments.php');
 require_once('onFactCustomers.php');
 require_once('onFactContactPeople.php');
 require_once('onFactInvoices.php');
+require_once('onFactProposals.php');
 require_once('onFactProductgroups.php');
 require_once('onFactEmails.php');
 require_once('onFactDocumentevents.php');
@@ -20,6 +21,7 @@ class Api {
         $this->Customers        = new Customers($this);
         $this->ContactPeople    = new ContactPeople($this);
         $this->Invoices         = new Invoices($this);
+        $this->Proposals        = new Proposals($this);
         $this->Productgroups    = new Productgroups($this);
         $this->Emails           = new Emails($this);
         $this->Documentevents   = new Documentevents($this);

@@ -25,7 +25,7 @@ class Attachments {
         } else { // 
           $cFile = '@' . realpath($tmpfname);
         }
-        $post = array( 'file_contents'=> $cFile);
+        $post = array('file'=> $cFile);
         $query = http_build_query(['name' => $attachment['Attachment']['name'], 'model' => $attachment['Attachment']['model'], 'model_id' => $attachment['Attachment']['model_id']]);
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_HTTPHEADER, array(       

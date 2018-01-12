@@ -6,6 +6,7 @@ PHP classes that can be used to connect to the onFact API
 * Contacts (customers)
 * ContactPeople
 * Invoices
+* Proposals
 * Productgroups
 * Products
 * Documentevents
